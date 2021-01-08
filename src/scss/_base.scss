@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto';
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+span {
+    display: inline-block;
+}
+
+.container {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap
+}
+
+h1{
+    @include font(28px, 700);
+    margin-bottom: 30px;
+}

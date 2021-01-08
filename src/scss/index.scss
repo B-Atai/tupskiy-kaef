@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import "./columns";
+@import "./mixin";
+@import "./variables";
+@import "./base";
+@import "./components/header";
+@import "./components/news";
+@import "./components/programs";
+@import "./components/gallery";
+@import "./components/footer";
+
+@import "./media";
+@import "./vendors/slick";

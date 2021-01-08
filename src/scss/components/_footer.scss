@@ -1,0 +1,37 @@
+.footer{
+    border-top: 1px solid #DADEE3;
+    &__wrapper,
+    &__logo,
+    &__links{
+        align-items: center;
+    }
+    &__wrapper{
+        padding: 31px 0;
+        justify-content: space-between;
+    }
+    &__logo{
+        a{
+            display: flex;
+            align-items: center;
+            img{
+                margin-right: 10px;
+            }
+            span{
+                color: $color-black;
+                @include font(15px, 400);
+            }
+        }
+    }
+    &__links{
+        ul{
+            margin-right: 72px;
+            li{
+                margin-right: 20px;
+            }
+        }
+        span{
+            @include font(15px, 400);
+            color: $color-gray;
+        }
+    }
+}
