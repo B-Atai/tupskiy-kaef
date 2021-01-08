@@ -25,8 +25,8 @@ function burger(){
 burger();
 
 function dropdown() {
-    const dropdownBtn =document.querySelector('.lang__main')
-    const dropdownItem = document.querySelector('.lang__content')
+    const dropdownBtn =document.querySelector('.dropdownbtn')
+    const dropdownItem = document.querySelector('.dropdownitem')
     dropdownBtn.addEventListener('click', () =>{
         dropdownItem.classList.toggle('is-active')
     })

@@ -35,6 +35,7 @@
 
 body {
   font-family: 'Roboto';
+  overflow: hidden;
 }
 
 li {
@@ -554,7 +555,6 @@ h1 {
     padding-right: 100px !important;
   }
   .burger {
-    display: block;
     position: absolute;
     right: -100vw;
     transition: 0.3s;
@@ -611,6 +611,9 @@ h1 {
   }
   .burger__menu nav li:hover hr, .burger__menu nav li:hover a {
     opacity: 1;
+  }
+  .burger .lang {
+    margin-top: 20px;
   }
   .is-active.burger {
     display: flex;

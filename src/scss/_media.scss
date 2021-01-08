@@ -54,7 +54,6 @@
         }
     }
     .burger{
-        display: block;
         position: absolute;
         right: -100vw;
         transition: 0.3s;
@@ -115,6 +114,9 @@
                     }
                 }
             }
+        }
+        .lang{
+            margin-top: 20px;
         }
     }
     .is-active{
@@ -184,11 +186,4 @@
             }
         }
     }
-    // .slider{
-    //     &__item{
-    //         &:nth-child(n){
-    //             display: none !important;
-    //         }
-    //     }
-    // }
 }
