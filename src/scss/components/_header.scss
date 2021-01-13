@@ -11,13 +11,15 @@
 
     &__link {
         align-items: center;
+        img{
+            max-width: 50px;
+        }
     }
 
     &__logo {
         width: 30%;
 
         a {
-            display: flex;
             flex-wrap: nowrap;
 
             img {
@@ -47,7 +49,7 @@
         span:first-child {
             display: flex;
             align-items: center;
-            @include font(13px, 300);
+            @include font(12px, 300);
             margin-bottom: 4px;
         }
 
@@ -58,7 +60,7 @@
 
     label {
         position: relative;
-
+        margin-right: 5px;
         input {
             padding: 10px 190px 10px 12px;
             border: none;
@@ -126,32 +128,29 @@
 
     &__main {
         cursor: pointer;
-
         span {
-            span {
-                margin-left: 20px;
-                position: relative;
+            margin-left: 20px;
+            position: relative;
 
-                &::before {
-                    position: absolute;
-                    content: '';
-                    width: 16px;
-                    height: 16px;
-                    left: -26px;
-                    top: 50%;
-                    transform: translateY(-50%);
-                    background-image: url("../images/russia.svg");
-                    background-repeat: no-repeat;
-                    background-position: center;
-                }
+            &::before {
+                position: absolute;
+                content: '';
+                width: 16px;
+                height: 16px;
+                left: -26px;
+                top: 50%;
+                transform: translateY(-50%);
+                background-image: url("../images/russia.svg");
+                background-repeat: no-repeat;
+                background-position: center;
+            }
 
-                @include font(18px, 400);
-                color: $color-white;
-                transition: 0.3s;
+            @include font(18px, 400);
+            color: $color-white;
+            transition: 0.3s;
 
-                &:hover {
-                    color: $color-gray;
-                }
+            &:hover {
+                color: $color-gray;
             }
         }
     }

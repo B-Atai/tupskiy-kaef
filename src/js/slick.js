@@ -14,4 +14,3 @@ $('.slider__wrapper').slick({
     },
   ],
 });
-  

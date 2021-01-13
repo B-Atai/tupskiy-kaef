@@ -83,12 +83,15 @@ h1 {
   align-items: center;
 }
 
+.header__link img {
+  max-width: 50px;
+}
+
 .header__logo {
   width: 30%;
 }
 
 .header__logo a {
-  display: flex;
   flex-wrap: nowrap;
 }
 
@@ -116,7 +119,7 @@ h1 {
 .header__items span:first-child {
   display: flex;
   align-items: center;
-  font-size: 13px;
+  font-size: 12px;
   font-weight: 300;
   margin-bottom: 4px;
 }
@@ -128,6 +131,7 @@ h1 {
 
 .header label {
   position: relative;
+  margin-right: 5px;
 }
 
 .header label input {
@@ -198,7 +202,7 @@ h1 {
   cursor: pointer;
 }
 
-.lang__main span span {
+.lang__main span {
   margin-left: 20px;
   position: relative;
   font-size: 18px;
@@ -207,7 +211,7 @@ h1 {
   transition: 0.3s;
 }
 
-.lang__main span span::before {
+.lang__main span::before {
   position: absolute;
   content: '';
   width: 16px;
@@ -220,7 +224,7 @@ h1 {
   background-position: center;
 }
 
-.lang__main span span:hover {
+.lang__main span:hover {
   color: #7F7F7F;
 }
 
@@ -508,6 +512,35 @@ h1 {
   font-size: 15px;
   font-weight: 400;
   color: #7F7F7F;
+}
+
+@media screen and (max-width: 1024px) {
+  .header__items span:last-child {
+    font-size: 14px;
+  }
+  .lang__main span {
+    font-size: 15px;
+  }
+  .lang__content a span {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header__top {
+    justify-content: center;
+  }
+  .header__logo {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .header__logo a span {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+  .header__contacts {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 376px) {
